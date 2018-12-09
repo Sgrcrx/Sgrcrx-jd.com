@@ -110,12 +110,13 @@
 		border-radius: 0.8rem;
 		font-size: 14px;
 		display: inline-block;
-		background-color: #c8483f;
+		background-color: #4392bf;
 		margin-left: 0.8rem;
 	}
 	
 	.user-person .person-me .my-head-name i {
 		margin: 0px 2px;
+		color: #fff;
 	}
 	
 	.user-person .person-me .my-head-name span {
