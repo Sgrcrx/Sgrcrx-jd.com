@@ -48,6 +48,7 @@
 		box-sizing: border-box;
 		padding: 0rem 1rem;
 		margin-bottom: 1rem;
+		padding-bottom: 1rem;
 		background-color: #fff;
 		/*background-color: #9ED99D;*/
 	}

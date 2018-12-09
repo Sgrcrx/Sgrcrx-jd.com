@@ -8,6 +8,7 @@
 		<user-tools></user-tools>
 		<user-serve></user-serve>
 		<groom></groom>
+		<goods></goods>
 		<div class="crx"></div>
 		<footeres></footeres>
 	</div>
@@ -23,6 +24,7 @@
 	import UserTools from '../components/UserTools'
 	import UserServe from '../components/UserServe'
 	import Groom from '../components/Groom'
+	import Goods from'../components/Goods'
 
 	export default {
 		name: 'user',
@@ -35,7 +37,8 @@
 			UserFoots,
 			UserTools,
 			UserServe,
-			Groom
+			Groom,
+			Goods
 		}
 	}
 </script>
@@ -46,6 +49,6 @@
 	}
 	
 	.crx{
-		height: 1000px;
+		height: 2000px;
 	}
 </style>
