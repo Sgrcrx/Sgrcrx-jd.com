@@ -17,7 +17,7 @@
 			return{
 				pays:[{
 					its:'11 张',
-					test:'待付款'
+					test:'京东券'
 				},{
 					its:'9000.00 元',
 					test:'白条额度'
