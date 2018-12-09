@@ -20,6 +20,14 @@ import AdmincrxTop from './components/AdmincrxTop.vue'
 import AdmincrxLeft from './components/AdmincrxLeft.vue'
 import AdmincrxRight from './components/AdmincrxRight.vue'
 
+//
+import UserEle from './components/UserEle.vue'
+import UserPay from './components/UserPay.vue'
+import UserFoots from './components/UserFoots.vue'
+import UserTools from './components/UserTools.vue'
+import UserServe from './components/UserServe.vue'
+import Groom from './components/Groom.vue'
+
 Vue.use(Router)
 
 const router = new Router({
