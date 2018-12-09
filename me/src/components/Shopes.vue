@@ -192,8 +192,8 @@
 	
 	ul li {
 		box-sizing: border-box;
-		height: 9rem;
-		margin-bottom: 0.2rem;
+		height: 10rem;
+		margin-bottom: 0.4rem;
 		/*background-color: aqua;*/
 	}
 	
@@ -208,7 +208,7 @@
 	
 	.right {
 		box-shadow: 0rem 0.1rem 0.3rem #eee;
-		/*	background-color: maroon;*/
+		/*background-color: maroon;*/
 	}
 	
 	.right .content {
@@ -219,23 +219,26 @@
 	.right .content .inner {
 		box-sizing: border-box;
 		padding: 0rem 1rem;
+		/*background-color: cornflowerblue;*/
 	}
 	
 	.image {
-		width: 4rem;
-		height: 4rem;
+		width: 6rem;
+		height: 6rem;
 		box-sizing: border-box;
 		display: inline-block;
+		padding-top: 0.4rem;
 		/*background-color: blue;*/
 	}
 	
 	.image img {
-		width: 4rem;
-		height: 4rem;
+		width: 6rem;
+		height: 6rem;
 	}
 	
 	.text {
 		box-sizing: border-box;
+		/*background-color: darkcyan;*/
 	}
 	
 	.text h4 {
@@ -244,10 +247,11 @@
 		-webkit-line-clamp: 2;
 		-webkit-box-orient: vertical;
 		text-overflow: ellipsis;
-		height: 3em;
+		height: 3.4em;
 		font-size: 0.6rem;
 		color: black;
 		font-weight: normal;
+		/*background-color: darkcyan;*/
 	}
 	
 	.text h5 {
@@ -255,13 +259,17 @@
 		color: #666;
 		text-align: left;
 		font-weight: normal;
+		margin-top: -0.6rem;
+		/*background-color: darkcyan;*/
 	}
 	
 	.text p {
 		font-size: 0.1rem;
 		color: #D67F8D;
 		text-align: left;
-		margin: 0.1rem 0rem;
+		margin: -0.6rem 0rem;
+		margin-top: -0.4rem;
+		/*background-color: darkcyan;*/
 	}
 	
 	.text p .bai {
@@ -273,13 +281,14 @@
 	.bot {
 		margin-left: -4.8rem;
 		line-height: 2rem;
-		/*			background-color: salmon;*/
+		/*background-color: salmon;*/
 	}
 	
 	.money {
 		font-size: 0.8rem;
 		color: #F62F33;
 		text-align: left;
+		margin-left: -2rem;
 		/*background-color: khaki;*/
 	}
 	
@@ -338,7 +347,7 @@
 		font-size: 0.3rem;
 		line-height: 3rem;
 		position: fixed;
-		bottom: 3.4rem;
+		bottom: 4.4rem;
 		left: 0rem;
 		width: 100%;
 		height: 3rem;
