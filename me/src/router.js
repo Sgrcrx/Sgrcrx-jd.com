@@ -14,6 +14,7 @@ import Detail from './components/Detail.vue'
 import Recommend from './components/Recommend.vue'
 import Routerss from './views/Routerss.vue'
 import Ss from './views/Ss.vue'
+import Ceshi from './views/Ceshi.vue'
 //admincrx
 import Admincrx from './views/Admincrx.vue'
 import AdmincrxTop from './components/AdmincrxTop.vue'
@@ -51,6 +52,10 @@ const router = new Router({
 			path: '/',
 			name: 'home',
 			component: Home
+		},{
+			path: '/ceshi',
+			name: 'ceshi',
+			component: Ceshi
 		},
 		{
 			path: '/routerss',
