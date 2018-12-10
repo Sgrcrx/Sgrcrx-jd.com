@@ -14,6 +14,8 @@ Vue.use(uiv)
 //import "./assets/css/font-awesome.min.css"
 import "./assets/css/weui.css"
 
+
+
 Vue.config.productionTip = false
 
 new Vue({
