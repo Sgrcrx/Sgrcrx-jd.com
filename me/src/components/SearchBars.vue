@@ -1,25 +1,35 @@
 <template>
+	<div class="search-bars">
+		
 	<header :class='{fixed:fixed}'>
-				<div class='category'><i class=' fa fa-category'></i></div>
+				<div class='category'><i class=' fa fa-th-list'></i></div>
 				<div class='search-input'>
 					<div class='tu'>
 						<img src="../assets/img/002.png"/>
 						<i class='fa fa-search'></i>
 					</div>
-					<input type='text' name='' id='' value='' placeholder='请输入搜索内容' />
+					<input type='text' name='' id='' value='' placeholder='请输入搜索内容'  @focus="show=true"/>
 				</div>
 				<div class='user'>
 					<i class='fa fa-user'></i>
 				</div>
+				<search-click v-model="show"></search-click>
 			</header>
+			
+	</div>
 </template>
 
 <script>
+	import SearchClick from '../components/SearchClick'
+	
 	export default {
 		data(){
 			return{
-				fixed:false
+				fixed:false,
+				show:false
 			};
+		},created(){
+			console.log("search-bar");
 		},
 		mounted() {
 			var self = this;
@@ -31,6 +41,9 @@
 					self.fixed = false;
 				}
 			});
+		},
+		components:{
+			SearchClick
 		}
 
 	}

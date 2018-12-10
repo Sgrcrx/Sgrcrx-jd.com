@@ -1,52 +1,69 @@
 <template>
-	<div class="search">
-		<!--<input type="text" name="" id="" value="" v-model="keyword" /><button @click="search">搜索</button>-->
-		<search-click v-model='show'></search-click>
-
-		<!--<goods-item></goods-item>-->
-		<footeres></footeres>
+	<div class="searchclick" v-show="show">
+	<header>
+			<span class="lefts">
+				<a href="#" @click.prevent="hide"><i class="fa fa-angle-left"></i></a>
+			</span>
+			<div class='category'>
+				<i class=' fa fa-category'></i>
+			</div>
+			<div class='search-input'>
+				<div class='tu'>
+					<i class='fa fa-search'></i>
+				</div>
+				<input type='text' name='' id='' value='' placeholder='请输入搜索内容'/>
+			</div>
+			<div class='user'>
+				<button>搜索</button>
+			</div>
+		</header>
+		
 	</div>
 </template>
 
 <script>
-	import axios from 'axios'
-	import Footeres from '../components/Footeres'
-	import SearchClick from '../components/SearchClick'
-	//	import GoodsItem from '../components/GoodsItem'
-
-	export default {
-		data() {
-			return {
-				keyword: '',
-				productes: [],
+	export default{
+		data(){
+			return{
 				show:false
 			};
 		},
-
-		name: 'search',
-		components: {
-			Footeres,
-			SearchClick
-			//			GoodsItem
+		props:['value'],
+		created(){
+			this.show = this.value;
+			console.log(this.show);
 		},
-		methods: {
-			search() {
-				axios.get(this.serveRoot + "/index.php/api/index/searchProduct?keyword=" + this.keyword).then(res => {
-					console.log(res);
-					this.productes = res.data;
-				}).catch(err => {});
+		watch:{
+			value(val){
+				this.show =val;
+				if(val){
+					document.body.style.overflow = "hidden";
+				}else{
+					document.body.style.overflow = "auto";
+				}
 			}
 		},
-		created() {
-			console.log(this.$route);
-			console.log(this.$router);
-		}
+		methods:{
+			hide(){
+				this.show = false;
+				this.$emit('input',false);
+				document.body.style.overflow = "hidden";
+			}
+		},
+		
 	}
 </script>
 
 <style scoped="scoped">
-	.search {
-		text-align: center;
+	.searchclick{
+		width: 100%;
+		height: 100%;
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		right: 0px;
+		left: 0px;
+		background-color: #fff;
 	}
 	
 	body {
@@ -57,13 +74,14 @@
 		width: 100%;
 		height: 44px;
 		display: flex;
-		z-index: 9999;
+		/*z-index: 9999;*/
 		position: fixed;
 		top: 0;
 		left: 0;
 		box-sizing: border-box;
 		padding: 0px 10px;
-		/*background-color: salmon;*/
+		background-color: #fff;
+		z-index: 999;
 	}
 	
 	header.fixed {
@@ -170,7 +188,7 @@
 		border: none;
 		outline: none;
 		border-radius: 6px;
-		margin-top: 10px;
+		margin-top: 8px;
 		font-size: 14px;
 		background-color: #e93b3d;
 	}

@@ -47,12 +47,14 @@
 	}
 </script>
 
-<style>
+<style scoped="scoped">
 	@import url("../assets/css/swiper.min.css");
 	/*轮播图*/
 	
 	.swiper-container {
-		
+		width: 100%;
+		height: 100%;
+		/*background-color: mistyrose;*/
 	}
 	
 	.swiper-container a {
